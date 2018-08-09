@@ -40,7 +40,15 @@ module.exports = function (app) {
   app.service('authentication').hooks({
     before: {
       create: [
-        authentication.hooks.authenticate(config.strategies)
+        authentication.hooks.authenticate(config.strategies),
+        // This hook adds the `roles` attribute to the JWT payload by
+        // modifying params.payload.
+        hook => {
+          // make sure params.payload exists
+          hook.params.payload = hook.params.payload || {};
+          // merge in a `roles` property
+          Object.assign(hook.params.payload, {roles: hook.params.user.roles});
+        }
       ],
       remove: [
         authentication.hooks.authenticate('jwt')

@@ -3,16 +3,24 @@ const { authenticate } = require('@feathersjs/authentication').hooks;
 const {
   hashPassword, protect
 } = require('@feathersjs/authentication-local').hooks;
+const { restrictToOwner, restrictToRoles } = require('feathers-authentication-hooks');
+const restrict = [
+  authenticate('jwt'),
+  restrictToOwner({
+    idField: '_id',
+    ownerField: '_id'
+  })
+];
 
 module.exports = {
   before: {
     all: [],
-    find: [ authenticate('jwt') ],
-    get: [ authenticate('jwt') ],
-    create: [ hashPassword() ],
-    update: [ hashPassword(),  authenticate('jwt') ],
-    patch: [ hashPassword(),  authenticate('jwt') ],
-    remove: [ authenticate('jwt') ]
+    find: [ authenticate('jwt'), restrictToRoles({ roles: ['admin']}) ],
+    get: [ ...restrict ],
+    create: [ authenticate('jwt'), restrictToRoles({ roles: ['admin']}), hashPassword() ],
+    update: [ ...restrict, hashPassword() ],
+    patch: [ ...restrict, hashPassword() ],
+    remove: [ authenticate('jwt'), restrictToRoles({ roles: ['admin']}) ]
   },
 
   after: {
