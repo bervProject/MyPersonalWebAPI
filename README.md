@@ -1,5 +1,7 @@
 # MyPersonalWebAPI
 
+![Build Status](https://travis-ci.org/bervProject/MyPersonalWebAPI.svg?branch=master)
+
 > Web API for Bervianto&#39;s Web
 
 ## About
