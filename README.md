@@ -6,18 +6,17 @@
 
 > Web API for Bervianto&#39;s Web
 
-## Notes
+## Notes (Requirement for Development or Production)
 
 - Using Dockerfile or Docker Compose
-```
-Please rename .env.example into .env and update secret keys
-```
+
+Please rename `.env.example` into `.env` and update secret keys
+
 
 - Using Heroku
 
-```
 Update environment or config, using `secret` and `production` as keys and insert your value.
-```
+
 
 ## About
 
