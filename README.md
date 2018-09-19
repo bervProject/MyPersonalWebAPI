@@ -6,6 +6,19 @@
 
 > Web API for Bervianto&#39;s Web
 
+## Notes
+
+- Using Dockerfile or Docker Compose
+```
+Please rename .env.example into .env and update secret keys
+```
+
+- Using Heroku
+
+```
+Update environment or config, using `secret` and `production` as keys and insert your value.
+```
+
 ## About
 
 This project uses [Feathers](http://feathersjs.com). An open source web framework for building modern real-time applications.
