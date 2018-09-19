@@ -1,0 +1,12 @@
+version: '3'
+services:
+  webapi:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:14444"
+    restart: always
+    env_file: .env
+    environment:
+      production: 'true'
