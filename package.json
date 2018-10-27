@@ -42,7 +42,7 @@
     "feathers-authentication-hooks": "^0.3.1",
     "feathers-nedb": "^3.1.0",
     "feathers-permissions": "^0.2.1",
-    "helmet": "^3.13.0",
+    "helmet": "^3.14.0",
     "nedb": "^1.8.0",
     "serve-favicon": "^2.5.0",
     "winston": "^3.1.0"
