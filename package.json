@@ -33,7 +33,7 @@
     "@feathersjs/authentication-jwt": "^2.0.8",
     "@feathersjs/authentication-local": "^1.2.8",
     "@feathersjs/configuration": "^2.0.5",
-    "@feathersjs/errors": "^3.3.4",
+    "@feathersjs/errors": "^3.3.5",
     "@feathersjs/express": "^1.2.7",
     "@feathersjs/feathers": "^3.3.0",
     "@feathersjs/socketio": "^3.2.8",
