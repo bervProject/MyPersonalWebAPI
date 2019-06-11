@@ -5,7 +5,7 @@ const local = require('@feathersjs/authentication-local');
 
 module.exports = function (app) {
   const config = {
-    secret: process.env.secret,
+    secret: process.env.secret || 'debug-secret',
     strategies: [
       'jwt',
       'local'
