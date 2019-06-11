@@ -8,30 +8,50 @@ const checkPermissions = require('feathers-permissions');
 const restrict = [
   authenticate('jwt'),
   restrictToOwner({
-    idField: '_id',
-    ownerField: '_id'
+    idField: 'id',
+    ownerField: 'id'
   })
 ];
 
 module.exports = {
   before: {
     all: [],
-    find: [ authenticate('jwt'), checkPermissions({
-      roles: ['admin']
-    }) ],
-    get: [ ...restrict ],
-    create: [ authenticate('jwt'), checkPermissions({
-      roles: ['admin']
-    }), hashPassword() ],
-    update: [ ...restrict, hashPassword() ],
-    patch: [ ...restrict, hashPassword() ],
-    remove: [ authenticate('jwt'), checkPermissions({
-      roles: ['admin']
-    }) ]
+    find: [
+      authenticate('jwt'),
+      checkPermissions({
+        roles: ['admin'],
+        field: 'role'
+      })
+    ],
+    get: [
+      ...restrict
+    ],
+    create: [
+      authenticate('jwt'),
+      checkPermissions({
+        roles: ['admin'],
+        field: 'role'
+      }),
+      hashPassword()
+    ],
+    update: [
+      ...restrict,
+      hashPassword()
+    ],
+    patch: [
+      ...restrict,
+      hashPassword()
+    ],
+    remove: [
+      authenticate('jwt'),
+      checkPermissions({
+        roles: ['admin']
+      })
+    ]
   },
 
   after: {
-    all: [ 
+    all: [
       // Make sure the password field is never sent to the client
       // Always must be the last hook
       protect('password')
