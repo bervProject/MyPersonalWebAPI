@@ -6,5 +6,30 @@
     "default": 10,
     "max": 50
   },
-  "nedb": "../data"
+  "nedb": "../data",
+  "authentication": {
+    "secret": "8f3c9bd4dc24b77890b4d43624af85f717564ff7b3ee16faf52d7ad2a87dab6b61ea2712039a4eee85704136b79de6fdb6078be015f3973053ef8940c79e721da5998c91f1a9b167b13509759495362434af66a21c2a5ce6f7ff3e0ad4e1f1af95a30c7432015320765d3453927bb1ddfcf6480efa49d5ab951cc778320da0d932f8f944890d4651a7e93ea6925cf0bb08476f44870eeb22debe414f54bd8e0a769f2af35360a83345f02afd7b7363ff72c4309a7f0f3a87d20f047c0dab671ac83590e6cee6dd6a1aa3e7bc057a9c27cace31b3f68f5393991a966dbc242aacae4497c7ab2531a407b8c80b07a081b165252c416818c65cb55521d5e5d211f4",
+    "strategies": [
+      "jwt",
+      "local"
+    ],
+    "path": "/authentication",
+    "service": "users",
+    "jwt": {
+      "header": {
+        "typ": "access"
+      },
+      "audience": "https://berviantoleo.herokuapp.com",
+      "subject": "anonymous",
+      "issuer": "bervLeo",
+      "algorithm": "HS256",
+      "expiresIn": "1d"
+    },
+    "local": {
+      "entity": "user",
+      "usernameField": "email",
+      "passwordField": "password"
+    }
+  },
+  "postgres": "postgres://postgres:@localhost:5432/my_personal_web_api"
 }

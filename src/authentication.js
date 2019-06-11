@@ -4,31 +4,8 @@ const local = require('@feathersjs/authentication-local');
 
 
 module.exports = function (app) {
-  const config = {
-    secret: process.env.secret || 'debug-secret',
-    strategies: [
-      'jwt',
-      'local'
-    ],
-    path: '/authentication',
-    service: 'users',
-    jwt: {
-      header: {
-        typ: 'access'
-      },
-      audience: 'http://berviantoleo.herokuapp.com',
-      subject: 'anonymous',
-      issuer: 'bervLeo',
-      algorithm: 'HS256',
-      expiresIn: '1d'
-    },
-    local: {
-      entity: 'user',
-      usernameField: 'email',
-      passwordField: 'password'
-    }
-  };
-
+  const config = app.get('authentication');
+  config.secret = process.env.secret || config.secret;
   // Set up authentication with the secret
   app.configure(authentication(config));
   app.configure(jwt());
@@ -41,8 +18,6 @@ module.exports = function (app) {
     before: {
       create: [
         authentication.hooks.authenticate(config.strategies),
-        // This hook adds the `roles` attribute to the JWT payload by
-        // modifying params.payload.
         hook => {
           // make sure params.payload exists
           hook.params.payload = hook.params.payload || {};

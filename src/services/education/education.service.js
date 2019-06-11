@@ -1,5 +1,5 @@
 // Initializes the `education` service on path `/education`
-const createService = require('feathers-nedb');
+const createService = require('feathers-sequelize');
 const createModel = require('../../models/education.model');
 const hooks = require('./education.hooks');
 
