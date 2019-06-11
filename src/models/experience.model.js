@@ -1,12 +1,44 @@
-const NeDB = require('nedb');
-const path = require('path');
+// See http://docs.sequelizejs.com/en/latest/docs/models-definition/
+// for more of what you can do here.
+const Sequelize = require('sequelize');
+const DataTypes = Sequelize.DataTypes;
 
 module.exports = function (app) {
-  const dbPath = app.get('nedb');
-  const Model = new NeDB({
-    filename: path.join(dbPath, 'experience.db'),
-    autoload: true
+  const sequelizeClient = app.get('sequelizeClient');
+  const experience = sequelizeClient.define('experience', {
+    fromDate: {
+      type: DataTypes.DATE,
+      allowNull: false
+    },
+    toDate: {
+      type: DataTypes.DATE,
+      allowNull: true
+    },
+    jobName: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    institution: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    description: {
+      type: DataTypes.STRING,
+      allowNull: false
+    }
+  }, {
+    hooks: {
+      beforeCount(options) {
+        options.raw = true;
+      }
+    }
   });
 
-  return Model;
+  // eslint-disable-next-line no-unused-vars
+  experience.associate = function (models) {
+    // Define associations here
+    // See http://docs.sequelizejs.com/en/latest/docs/associations/
+  };
+
+  return experience;
 };

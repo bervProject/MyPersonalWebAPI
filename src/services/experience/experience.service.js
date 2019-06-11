@@ -1,5 +1,5 @@
 // Initializes the `experience` service on path `/experience`
-const createService = require('feathers-nedb');
+const createService = require('feathers-sequelize');
 const createModel = require('../../models/experience.model');
 const hooks = require('./experience.hooks');
 
