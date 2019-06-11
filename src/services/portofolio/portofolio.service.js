@@ -1,5 +1,5 @@
 // Initializes the `portofolio` service on path `/portofolio`
-const createService = require('feathers-nedb');
+const createService = require('feathers-sequelize');
 const createModel = require('../../models/portofolio.model');
 const hooks = require('./portofolio.hooks');
 
