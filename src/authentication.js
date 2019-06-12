@@ -22,7 +22,10 @@ module.exports = function (app) {
           // make sure params.payload exists
           hook.params.payload = hook.params.payload || {};
           // merge in a `roles` property
-          Object.assign(hook.params.payload, {roles: hook.params.user.roles});
+          Object.assign(hook.params.payload, {
+            roles: hook.params.user.role,
+            role: hook.params.user.role
+          });
         }
       ],
       remove: [
