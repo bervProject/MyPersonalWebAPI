@@ -56,7 +56,7 @@
     "snyk": "^1.195.1"
   },
   "devDependencies": {
-    "eslint": "^6.0.1",
+    "eslint": "^6.1.0",
     "mocha": "^6.2.0",
     "request": "^2.88.0",
     "request-promise": "^4.2.4"
