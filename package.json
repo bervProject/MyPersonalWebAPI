@@ -28,8 +28,7 @@
     "start": "node src/",
     "debug": "node --inspect src/",
     "mocha": "mocha test/ --recursive --exit",
-    "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "snyk-protect": "snyk protect"
   },
   "dependencies": {
     "@feathersjs/authentication": "^2.1.16",
