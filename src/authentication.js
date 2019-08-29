@@ -8,12 +8,13 @@ class MyAuthenticationService extends AuthenticationService {
     const payload = await super.getPayload(authResult, params);
     const { user } = authResult;
 
-    return {
-      ...payload,
-      userId: user.id,
-      role: user.role,
-      roles: user.role
-    };
+    return Object.assign(
+      payload,
+      {
+        userId: user.id,
+        role: user.role,
+        roles: user.role
+      });
   }
 }
 
