@@ -38,15 +38,15 @@ module.exports = {
         roles: ['admin'],
         field: 'role'
       }),
-      hashPassword()
+      hashPassword('password')
     ],
     update: [
       ...restrict,
-      hashPassword()
+      hashPassword('password')
     ],
     patch: [
       ...restrict,
-      hashPassword()
+      hashPassword('password')
     ],
     remove: [
       ...restrict
