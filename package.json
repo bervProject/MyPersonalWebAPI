@@ -49,7 +49,7 @@
     "feathers-sequelize": "^6.0.1",
     "helmet": "^3.21.0",
     "pg": "^7.12.1",
-    "sequelize": "^5.18.0",
+    "sequelize": "^5.18.1",
     "serve-favicon": "^2.5.0",
     "snyk": "^1.226.0",
     "uuid": "^3.3.3",
