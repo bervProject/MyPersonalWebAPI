@@ -44,12 +44,14 @@
     lodash.pick "^4.4.0"
     passport-jwt "^4.0.0"
 
-"@feathersjs/authentication-local@^4.3.2":
-  version "4.3.2"
-  resolved "https://registry.yarnpkg.com/@feathersjs/authentication-local/-/authentication-local-4.3.2.tgz#b578afd46c76862bada22a960a444d56da176b65"
-  integrity sha512-nZKWwi/99zPqFIZ+0RUBx65iatayyXNkD9ekyNy+1pC5DqmC4FK+5LbJqBF4zSBSRnfAARFW2qehfKn4AY/eBQ==
+"@feathersjs/authentication-local@^4.3.3":
+  version "4.3.3"
+  resolved "https://registry.yarnpkg.com/@feathersjs/authentication-local/-/authentication-local-4.3.3.tgz#a8ebeeaa3ec0308570a9949fbca0ea1ea0489382"
+  integrity sha512-MqCFmtPeFOzpok7suToiO8aRtfENHgL45/HxTGI6+EXwifDO1wAEPl98YqPm7DUCL+ww/atopohBhoTA6R6Jdw==
   dependencies:
-    "@feathersjs/errors" "^4.3.2"
+    "@feathersjs/authentication" "^4.3.3"
+    "@feathersjs/errors" "^4.3.3"
+    "@feathersjs/feathers" "^4.3.3"
     bcryptjs "^2.4.3"
     debug "^4.1.1"
     lodash "^4.17.15"
@@ -68,13 +70,14 @@
     grant-profile "^0.0.5"
     lodash "^4.17.15"
 
-"@feathersjs/authentication@^4.3.2":
-  version "4.3.2"
-  resolved "https://registry.yarnpkg.com/@feathersjs/authentication/-/authentication-4.3.2.tgz#9a07f28eeecb85efa1612bed6aeedf2911347ee7"
-  integrity sha512-c87AtOD09SO7LitbxYwRezrrEOJDzKTjoLcR5770YbgJMBdOPJ/PdO49Ti0Ux6lef41klhhgAUS9ShlxcsWXkQ==
+"@feathersjs/authentication@^4.3.2", "@feathersjs/authentication@^4.3.3":
+  version "4.3.3"
+  resolved "https://registry.yarnpkg.com/@feathersjs/authentication/-/authentication-4.3.3.tgz#66f59fb6082646087d4c186d5cbae8131b2d5fb0"
+  integrity sha512-r2UvjP53lCwjYsvdhLR+qKMqhSRdbTi8EGdi8DQKPBHRjyo4lIW9jZIgHdMWH8nH5+1wjJ1dcRJhG968MI9TOg==
   dependencies:
-    "@feathersjs/errors" "^4.3.2"
-    "@feathersjs/transport-commons" "^4.3.2"
+    "@feathersjs/errors" "^4.3.3"
+    "@feathersjs/feathers" "^4.3.3"
+    "@feathersjs/transport-commons" "^4.3.3"
     debug "^4.1.1"
     jsonwebtoken "^8.5.1"
     lodash "^4.17.15"
@@ -158,7 +161,7 @@
     socket.io "^2.2.0"
     uberproto "^2.0.4"
 
-"@feathersjs/transport-commons@^4.3.2", "@feathersjs/transport-commons@^4.3.3":
+"@feathersjs/transport-commons@^4.3.3":
   version "4.3.3"
   resolved "https://registry.yarnpkg.com/@feathersjs/transport-commons/-/transport-commons-4.3.3.tgz#1244cff4a0c5a72832e300b2f1985c2d6784db99"
   integrity sha512-jSH0v4Twg1y9vBkHzeOVHzjHYv5ahaZQVathRmoiHWi/f5JZqwx01+lEBhHkDFJU9tH3BpnjctAdb8BVOz2FFQ==
