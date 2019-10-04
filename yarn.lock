@@ -118,7 +118,7 @@
   dependencies:
     debug "^4.1.1"
 
-"@feathersjs/express@^4.3.3", "@feathersjs/express@^4.3.4":
+"@feathersjs/express@^4.3.4":
   version "4.3.4"
   resolved "https://registry.yarnpkg.com/@feathersjs/express/-/express-4.3.4.tgz#27ce1f9dba15b39a66353d409678ddfcce266b5c"
   integrity sha512-t30iklJsgXqiOpzDGJ0UjcLHQlJC7YBqOdrx/qyYDS496urlsg4jY5gXU8JZZhnZig2m67cKDL3sbWeSpfhhJA==
@@ -161,17 +161,6 @@
     debug "^4.1.1"
     socket.io "^2.2.0"
     uberproto "^2.0.4"
-
-"@feathersjs/transport-commons@^4.3.3", "@feathersjs/transport-commons@^4.3.4":
-  version "4.3.4"
-  resolved "https://registry.yarnpkg.com/@feathersjs/transport-commons/-/transport-commons-4.3.4.tgz#fa60262665d54575ef2cd0272c55e0115adbec9f"
-  integrity sha512-94ijldtdPm0s4ZlOutk2mLGiUj4QWOIaj/g3XFQRIe8GM+MzKLrpY4ldLiHMAEleVOjyo2qH5Ar8qN4QLUcF5g==
-  dependencies:
-    "@feathersjs/commons" "^4.3.0"
-    "@feathersjs/errors" "^4.3.4"
-    debug "^4.1.1"
-    lodash "^4.17.15"
-    radix-router "^3.0.1"
 
 "@feathersjs/transport-commons@^4.3.4":
   version "4.3.4"
@@ -1602,12 +1591,13 @@ feathers-hooks-common@^4.20.7:
     process "0.11.10"
     traverse "^0.6.6"
 
-feathers-permissions@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/feathers-permissions/-/feathers-permissions-0.2.1.tgz#433ef73fbb7ddde6ac8991404d6f153749ed34f5"
-  integrity sha512-lZ3itZBv+ENDnJu69KXOdDVXslNoc1Dzg0L2o9TpN3Ji/4gi65mHM7fLVqbI2dVBQJWh9Z3B1b74aDabkUHr/Q==
+feathers-permissions@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/feathers-permissions/-/feathers-permissions-1.1.0.tgz#05682232688e1130d8a74b360c5b98668f516254"
+  integrity sha512-80gfOjF4AzwNK73r2NnKomHsPzl380wjAFk7D/6IzNdLEMfz4O7DvROE9Ay0R2CXwZHYjTrVR+NPnx+aMkIQtQ==
   dependencies:
-    "@feathersjs/errors" "^3.3.0"
+    "@feathersjs/errors" "^4.3.3"
+    lodash "^4.17.15"
 
 feathers-sequelize@^6.0.2:
   version "6.0.2"
