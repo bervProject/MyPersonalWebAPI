@@ -1591,12 +1591,13 @@ feathers-hooks-common@^4.20.7:
     process "0.11.10"
     traverse "^0.6.6"
 
-feathers-permissions@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/feathers-permissions/-/feathers-permissions-0.2.1.tgz#433ef73fbb7ddde6ac8991404d6f153749ed34f5"
-  integrity sha512-lZ3itZBv+ENDnJu69KXOdDVXslNoc1Dzg0L2o9TpN3Ji/4gi65mHM7fLVqbI2dVBQJWh9Z3B1b74aDabkUHr/Q==
+feathers-permissions@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/feathers-permissions/-/feathers-permissions-1.1.0.tgz#05682232688e1130d8a74b360c5b98668f516254"
+  integrity sha512-80gfOjF4AzwNK73r2NnKomHsPzl380wjAFk7D/6IzNdLEMfz4O7DvROE9Ay0R2CXwZHYjTrVR+NPnx+aMkIQtQ==
   dependencies:
-    "@feathersjs/errors" "^3.3.0"
+    "@feathersjs/errors" "^4.3.3"
+    lodash "^4.17.15"
 
 feathers-sequelize@^6.0.2:
   version "6.0.2"
