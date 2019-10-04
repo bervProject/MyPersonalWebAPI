@@ -118,7 +118,7 @@
   dependencies:
     debug "^4.1.1"
 
-"@feathersjs/express@^4.3.3", "@feathersjs/express@^4.3.4":
+"@feathersjs/express@^4.3.4":
   version "4.3.4"
   resolved "https://registry.yarnpkg.com/@feathersjs/express/-/express-4.3.4.tgz#27ce1f9dba15b39a66353d409678ddfcce266b5c"
   integrity sha512-t30iklJsgXqiOpzDGJ0UjcLHQlJC7YBqOdrx/qyYDS496urlsg4jY5gXU8JZZhnZig2m67cKDL3sbWeSpfhhJA==
@@ -161,17 +161,6 @@
     debug "^4.1.1"
     socket.io "^2.2.0"
     uberproto "^2.0.4"
-
-"@feathersjs/transport-commons@^4.3.3", "@feathersjs/transport-commons@^4.3.4":
-  version "4.3.4"
-  resolved "https://registry.yarnpkg.com/@feathersjs/transport-commons/-/transport-commons-4.3.4.tgz#fa60262665d54575ef2cd0272c55e0115adbec9f"
-  integrity sha512-94ijldtdPm0s4ZlOutk2mLGiUj4QWOIaj/g3XFQRIe8GM+MzKLrpY4ldLiHMAEleVOjyo2qH5Ar8qN4QLUcF5g==
-  dependencies:
-    "@feathersjs/commons" "^4.3.0"
-    "@feathersjs/errors" "^4.3.4"
-    debug "^4.1.1"
-    lodash "^4.17.15"
-    radix-router "^3.0.1"
 
 "@feathersjs/transport-commons@^4.3.4":
   version "4.3.4"
@@ -1576,14 +1565,14 @@ fast-safe-stringify@^2.0.4:
   resolved "https://registry.yarnpkg.com/fast-safe-stringify/-/fast-safe-stringify-2.0.6.tgz#04b26106cc56681f51a044cfc0d76cf0008ac2c2"
   integrity sha512-q8BZ89jjc+mz08rSxROs8VsrBBcn1SIw1kq9NjolL509tkABRk9io01RAjSaEv1Xb2uFLt8VtRiZbGp5H8iDtg==
 
-feathers-authentication-hooks@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/feathers-authentication-hooks/-/feathers-authentication-hooks-0.3.1.tgz#a6c595ef626f5c289492d304ad6364ae547dae76"
-  integrity sha512-6jSFfXAR5/NcWTfCwGfWfzRN1IDpzRke8bZBH+nS0Yd9sHGQWhWjOlBl/SieAo2UrHa+DIEzhrCN61Yo+uAZ0g==
+feathers-authentication-hooks@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/feathers-authentication-hooks/-/feathers-authentication-hooks-1.0.0.tgz#7a1d35f45baf0b7c8a15f72f49b67a2dba3d0b35"
+  integrity sha512-2mcOCHQHmYkwF+AIJo/uEyRlPxQ9LhZ5gEw898vcPqI3GDTZIvKAGHJCa1JDlWLbSzJcwE6It6gBFaYP/zXW6g==
   dependencies:
-    "@feathersjs/errors" "^3.3.0"
-    debug "^3.1.0"
-    lodash "^4.17.5"
+    "@feathersjs/errors" "^4.3.3"
+    debug "^4.1.1"
+    lodash "^4.17.15"
 
 feathers-hooks-common@^4.20.7:
   version "4.20.7"
