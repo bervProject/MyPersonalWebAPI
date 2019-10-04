@@ -71,7 +71,7 @@
     grant-profile "^0.0.5"
     lodash "^4.17.15"
 
-"@feathersjs/authentication@^4.3.3", "@feathersjs/authentication@^4.3.4":
+"@feathersjs/authentication@^4.3.4":
   version "4.3.4"
   resolved "https://registry.yarnpkg.com/@feathersjs/authentication/-/authentication-4.3.4.tgz#6810da5f41b82c84bbea0f16a85030ad893878fd"
   integrity sha512-RtJeLAAoPu+bWxH7zNvAkYQzPmbvKFHjLSmmdhi9Yjtf7udDqBlg2uhtsUeK4v64xRpS+6tsOmXZOfdWqSrW5w==
@@ -141,7 +141,7 @@
     events "^3.0.0"
     uberproto "^2.0.2"
 
-"@feathersjs/feathers@^4.3.2", "@feathersjs/feathers@^4.3.4":
+"@feathersjs/feathers@^4.3.4":
   version "4.3.4"
   resolved "https://registry.yarnpkg.com/@feathersjs/feathers/-/feathers-4.3.4.tgz#06791dd39408d8dd7948d54c5596f2f91aa8eb09"
   integrity sha512-2qe8+rkTn7YGFKv7vU0uh367F7SfyYUJuQh+BBmWjupCSH3xsCD5U+sACMZ16442fugWhcIo+41aUnj7e1IQAA==
@@ -3159,7 +3159,6 @@ proxy-addr@~2.0.5:
 
 "proxy-agent@git://github.com/snyk/node-proxy-agent.git#fix/https-agent-vuln":
   version "3.1.0"
-  uid f05c4640b94e0995ede28983aafadd3cc067f4d4
   resolved "git://github.com/snyk/node-proxy-agent.git#f05c4640b94e0995ede28983aafadd3cc067f4d4"
   dependencies:
     agent-base "^4.2.0"
