@@ -5,7 +5,7 @@ const {
 const {
   hashPassword, protect
 } = require('@feathersjs/authentication-local').hooks;
-const { restrictToOwner } = require('feathers-authentication-hooks');
+const { setField } = require('feathers-authentication-hooks');
 const checkPermissions = require('feathers-permissions');
 
 const restrict = [
@@ -16,9 +16,9 @@ const restrict = [
     error: false
   }),
   iff(context => !context.params.permitted,
-    restrictToOwner({
-      idField: 'id',
-      ownerField: 'id'
+    setField({
+      from: 'params.user.id',
+      as: 'params.query.id'
     })
   )
 ];
