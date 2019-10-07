@@ -4,6 +4,7 @@ WORKDIR /usr/src/app
 COPY package.json yarn.lock ./
 RUN apk add --no-cache git
 RUN yarn
+COPY . .
 
 FROM node:10-alpine as runner
 # Bundle app source
