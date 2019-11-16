@@ -56,15 +56,15 @@
     debug "^4.1.1"
     lodash "^4.17.15"
 
-"@feathersjs/authentication-oauth@^4.3.10":
-  version "4.3.10"
-  resolved "https://registry.yarnpkg.com/@feathersjs/authentication-oauth/-/authentication-oauth-4.3.10.tgz#aad6cafa95e82253f31b35d6b97ae112e3f7cf9a"
-  integrity sha512-PAdONT938x5ytbPDUUcyNxOZxd7G8PdYYlKbN5pGZO0Dt2YUIkqpCbpGtj00Q6uukgPxcGUpqgFN78/T/diU7Q==
+"@feathersjs/authentication-oauth@^4.3.11":
+  version "4.3.11"
+  resolved "https://registry.yarnpkg.com/@feathersjs/authentication-oauth/-/authentication-oauth-4.3.11.tgz#c280bba69e1afa8cb0a823b0a2e6a1f21386b172"
+  integrity sha512-bsqTZNBXNCHEQUqDwkCHdeqRf3dAiu7R3pzf2EGjlVnobSGOqDVanxuGDeESxnxTojP8P7WGKfT99tYsb5vAGg==
   dependencies:
-    "@feathersjs/authentication" "^4.3.10"
-    "@feathersjs/errors" "^4.3.10"
-    "@feathersjs/express" "^4.3.10"
-    "@feathersjs/feathers" "^4.3.10"
+    "@feathersjs/authentication" "^4.3.11"
+    "@feathersjs/errors" "^4.3.11"
+    "@feathersjs/express" "^4.3.11"
+    "@feathersjs/feathers" "^4.3.11"
     debug "^4.1.1"
     express-session "^1.17.0"
     grant "^4.6.3"
@@ -119,7 +119,7 @@
   dependencies:
     debug "^4.1.1"
 
-"@feathersjs/express@^4.3.10", "@feathersjs/express@^4.3.11":
+"@feathersjs/express@^4.3.11":
   version "4.3.11"
   resolved "https://registry.yarnpkg.com/@feathersjs/express/-/express-4.3.11.tgz#809ca92efe591f3d09dfce6464e6ad9b95642f02"
   integrity sha512-/g42a1JK7WXM4+sBfvz9yfAMAf5TwB5PrQqc43gdj5RuJzyZs+OoDTSxnR+fFnbmVhofyRd6PCjzpzp4YWNZ5Q==
@@ -162,17 +162,6 @@
     debug "^4.1.1"
     socket.io "^2.3.0"
     uberproto "^2.0.4"
-
-"@feathersjs/transport-commons@^4.3.10", "@feathersjs/transport-commons@^4.3.11":
-  version "4.3.11"
-  resolved "https://registry.yarnpkg.com/@feathersjs/transport-commons/-/transport-commons-4.3.11.tgz#627cd409c3400e78b4395da5c9e67c59ae2287eb"
-  integrity sha512-lDoMO9GZbf5+shGMyAcP7HOaftVjQ4twsHHEzXAYOYiqS6nTosfCivTtNbNr5m0KQfTkREquiDBcV8moVKSKmQ==
-  dependencies:
-    "@feathersjs/commons" "^4.3.7"
-    "@feathersjs/errors" "^4.3.11"
-    debug "^4.1.1"
-    lodash "^4.17.15"
-    radix-router "^3.0.1"
 
 "@feathersjs/transport-commons@^4.3.11":
   version "4.3.11"
