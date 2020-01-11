@@ -1657,10 +1657,10 @@ feathers-hooks-common@^5.0.1:
     process "0.11.10"
     traverse "^0.6.6"
 
-feathers-permissions@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/feathers-permissions/-/feathers-permissions-1.1.0.tgz#05682232688e1130d8a74b360c5b98668f516254"
-  integrity sha512-80gfOjF4AzwNK73r2NnKomHsPzl380wjAFk7D/6IzNdLEMfz4O7DvROE9Ay0R2CXwZHYjTrVR+NPnx+aMkIQtQ==
+feathers-permissions@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/feathers-permissions/-/feathers-permissions-2.0.0.tgz#f5421312ff9597dfd018527e62d9801545b8b435"
+  integrity sha512-2BguY0u59AT3exZ0/ovynQ1rGYjPf6B3WByJAFNbBV/6vfo2u3Uz4HGdynAHTNHeh/XU1muOLS02t7tnWezS4Q==
   dependencies:
     "@feathersjs/errors" "^4.3.3"
     lodash "^4.17.15"
