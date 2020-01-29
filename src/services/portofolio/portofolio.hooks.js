@@ -1,16 +1,28 @@
 const { authenticate } = require('@feathersjs/authentication').hooks;
+const userAuditHook = require('feathers-advance-hook').default.userAuditHook;
 
 module.exports = {
   before: {
     all: [],
     find: [],
     get: [],
-    create: [authenticate('jwt')],
-    update: [authenticate('jwt')],
-    patch: [authenticate('jwt') ],
-    remove: [authenticate('jwt') ]
+    create: [
+      authenticate('jwt'),
+      userAuditHook()
+    ],
+    update: [
+      authenticate('jwt'),
+      userAuditHook()
+    ],
+    patch: [
+      authenticate('jwt'),
+      userAuditHook()
+    ],
+    remove: [
+      authenticate('jwt'),
+      userAuditHook()
+    ]
   },
-
   after: {
     all: [],
     find: [],
@@ -20,7 +32,6 @@ module.exports = {
     patch: [],
     remove: []
   },
-
   error: {
     all: [],
     find: [],
