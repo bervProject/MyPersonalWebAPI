@@ -132,7 +132,7 @@
     lodash "^4.17.15"
     uberproto "^2.0.4"
 
-"@feathersjs/feathers@^4.3.0", "@feathersjs/feathers@^4.3.4", "@feathersjs/feathers@^4.4.1", "@feathersjs/feathers@^4.5.1":
+"@feathersjs/feathers@^4.3.4", "@feathersjs/feathers@^4.4.1", "@feathersjs/feathers@^4.5.1":
   version "4.5.1"
   resolved "https://registry.yarnpkg.com/@feathersjs/feathers/-/feathers-4.5.1.tgz#8b1e082606402d4208f400b6efba4c77ec96b80e"
   integrity sha512-fR+JjdW6HN0LgZzlS0TatyYhtr0Hu7Zh5/uJWbDVQ1+3Eqe3IFeqQzXXIVWipnFUEZ0Pw9d2n7TFvtMCkgHu3Q==
@@ -197,10 +197,10 @@
   resolved "https://registry.npmjs.org/@google-cloud/promisify/-/promisify-1.0.4.tgz#ce86ffa94f9cfafa2e68f7b3e4a7fad194189723"
   integrity sha512-VccZDcOql77obTnFh0TbNED/6ZbbmHDf8UMNnzO1d5g9V0Htfm4k5cllY8P1tJsRKC3zWYGRLaViiupcgVjBoQ==
 
-"@google-cloud/storage@^3.2.1":
-  version "3.5.0"
-  resolved "https://registry.npmjs.org/@google-cloud/storage/-/storage-3.5.0.tgz#42df4488e81b4c67b49190e4c7c8e50c662904f0"
-  integrity sha512-QxJ/zft4Kxbedpu7MQ5ZsNeS5WbonB7H28T32R4hQO2ply/j6n7bXmd5Vz0kzJu/iub20sK/ibgxYoxrgZD6CQ==
+"@google-cloud/storage@^4.3.0":
+  version "4.3.0"
+  resolved "https://registry.npmjs.org/@google-cloud/storage/-/storage-4.3.0.tgz#90118c42817fb2c8b3b8663a0f2857b5b45dda78"
+  integrity sha512-ph0jsUsZ9FPtN40V5eIkKPLUmxnTpxqBDkWxStW/kbQZgoNVGW9vJcbsYSyE4ath7jQIpM4OHu6aqmPFX1OnGw==
   dependencies:
     "@google-cloud/common" "^2.1.1"
     "@google-cloud/paginator" "^2.0.0"
@@ -208,12 +208,12 @@
     arrify "^2.0.0"
     compressible "^2.0.12"
     concat-stream "^2.0.0"
-    date-and-time "^0.10.0"
+    date-and-time "^0.12.0"
     duplexify "^3.5.0"
     extend "^3.0.2"
     gaxios "^2.0.1"
     gcs-resumable-upload "^2.2.4"
-    hash-stream-validation "^0.2.1"
+    hash-stream-validation "^0.2.2"
     mime "^2.2.0"
     mime-types "^2.0.8"
     onetime "^5.1.0"
@@ -370,11 +370,6 @@
   dependencies:
     "@types/node" "*"
 
-"@types/mime-types@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.npmjs.org/@types/mime-types/-/mime-types-2.1.0.tgz#9ca52cda363f699c69466c2a6ccdaad913ea7a73"
-  integrity sha1-nKUs2jY/aZxpRmwqbM2q2RPqenM=
-
 "@types/mime@*":
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/@types/mime/-/mime-2.0.1.tgz#dc488842312a7f075149312905b5e3c0b054c79d"
@@ -422,11 +417,6 @@
   integrity sha512-cI98INy7tYnweTsUlp8ocveVdAxENUThO0JsLSCs51cjOP2yV5Mqo5QszMDPckyRRA+PO6+wBgKvGvHUCc23TQ==
   dependencies:
     "@types/node" "*"
-
-"@types/uuid@^3.4.5":
-  version "3.4.7"
-  resolved "https://registry.npmjs.org/@types/uuid/-/uuid-3.4.7.tgz#51d42247473bc00e38cc8dfaf70d936842a36c03"
-  integrity sha512-C2j2FWgQkF1ru12SjZJyMaTPxs/f6n90+5G5qNakBxKXjTBc/YTSelHh4Pz1HUDwxFXD9WvpQhOGCDC+/Y4mIQ==
 
 "@types/xml2js@0.4.3":
   version "0.4.3"
@@ -1222,10 +1212,10 @@ data-uri-to-buffer@1:
   resolved "https://registry.yarnpkg.com/data-uri-to-buffer/-/data-uri-to-buffer-1.2.0.tgz#77163ea9c20d8641b4707e8f18abdf9a78f34835"
   integrity sha512-vKQ9DTQPN1FLYiiEEOQ6IBGFqvjCa5rSK3cWMy/Nespm5d/x3dGFT9UBZnkLxCwua/IXBi2TYnwTEpsOvhC4UQ==
 
-date-and-time@^0.10.0:
-  version "0.10.0"
-  resolved "https://registry.npmjs.org/date-and-time/-/date-and-time-0.10.0.tgz#53825b774167b55fbdf0bbd0f17f19357df7bc70"
-  integrity sha512-IbIzxtvK80JZOVsWF6+NOjunTaoFVYxkAQoyzmflJyuRCJAJebehy48mPiCAedcGp4P7/UO3QYRWa0fe6INftg==
+date-and-time@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.npmjs.org/date-and-time/-/date-and-time-0.12.0.tgz#6d30c91c47fa72edadd628b71ec2ac46909b9267"
+  integrity sha512-n2RJIAp93AucgF/U/Rz5WRS2Hjg5Z+QxscaaMCi6pVZT1JpJKRH+C08vyH/lRR1kxNXnPxgo3lWfd+jCb/UcuQ==
 
 debug@2, debug@2.6.9:
   version "2.6.9"
@@ -1849,18 +1839,16 @@ fast-text-encoding@^1.0.0:
   resolved "https://registry.npmjs.org/fast-text-encoding/-/fast-text-encoding-1.0.0.tgz#3e5ce8293409cfaa7177a71b9ca84e1b1e6f25ef"
   integrity sha512-R9bHCvweUxxwkDwhjav5vxpFvdPGlVngtqmx4pIZfSUhM/Q4NiIUHB456BAf+Q1Nwu3HEZYONtu+Rya+af4jiQ==
 
-feathers-advance-hook@^0.0.4:
-  version "0.0.4"
-  resolved "https://registry.npmjs.org/feathers-advance-hook/-/feathers-advance-hook-0.0.4.tgz#57b17641c14139c079f4ce7945310140c2cd21e8"
-  integrity sha512-7gqvbyQXriL8e+GaM5+/at7h/9vDO2/UfNSJfLKBsa4lubHdvD6Cycy2PMcKJSH1uNw9W9pkyETtphP+PhzuIQ==
+feathers-advance-hook@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.npmjs.org/feathers-advance-hook/-/feathers-advance-hook-0.0.5.tgz#6972e6a1563e37c100bfb4239f37c0743d4885bc"
+  integrity sha512-fmDJbNozYkBBcgkYXU0YTSDIKHOgdJXjS98KaDZ5xYV4YnkZn2TrDjapzWSZmu8aFULfkViYMBeuboLB3UWWrg==
   dependencies:
-    "@feathersjs/feathers" "^4.3.0"
-    "@google-cloud/storage" "^3.2.1"
-    "@types/mime-types" "^2.1.0"
-    "@types/uuid" "^3.4.5"
+    "@feathersjs/feathers" "^4.5.1"
+    "@google-cloud/storage" "^4.3.0"
     dist "^0.1.2"
-    mime-types "^2.1.24"
-    uuid "^3.3.3"
+    mime-types "^2.1.26"
+    uuid "^3.4.0"
 
 feathers-authentication-hooks@^1.0.1:
   version "1.0.1"
@@ -2321,7 +2309,7 @@ has@^1.0.1, has@^1.0.3:
   dependencies:
     function-bind "^1.1.1"
 
-hash-stream-validation@^0.2.1:
+hash-stream-validation@^0.2.2:
   version "0.2.2"
   resolved "https://registry.npmjs.org/hash-stream-validation/-/hash-stream-validation-0.2.2.tgz#6b34c4fce5e9fce265f1d3380900049d92a10090"
   integrity sha512-cMlva5CxWZOrlS/cY0C+9qAzesn5srhFA8IT1VPiHc9bWWBLkJfEUIZr7MWoi89oOOGmpg8ymchaOjiArsGu5A==
@@ -3112,7 +3100,7 @@ mime-db@1.43.0, "mime-db@>= 1.43.0 < 2":
   resolved "https://registry.npmjs.org/mime-db/-/mime-db-1.43.0.tgz#0a12e0502650e473d735535050e7c8f4eb4fae58"
   integrity sha512-+5dsGEEovYbT8UY9yD7eE4XTc4UwJ1jBYlgaQQF38ENsKR3wj/8q8RFZrF9WIZpB2V1ArTVFUva8sAul1NzRzQ==
 
-mime-types@^2.0.8, mime-types@^2.1.24:
+mime-types@^2.0.8, mime-types@^2.1.26:
   version "2.1.26"
   resolved "https://registry.npmjs.org/mime-types/-/mime-types-2.1.26.tgz#9c921fc09b7e149a65dfdc0da4d20997200b0a06"
   integrity sha512-01paPWYgLrkqAyrlDorC1uDwl2p3qZT7yl806vW7DvDoxwXi46jsjFbg+WdwotBIk6/MbEhO/dh5aZ5sNj/dWQ==
