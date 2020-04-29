@@ -1880,10 +1880,10 @@ fast-text-encoding@^1.0.0:
   resolved "https://registry.npmjs.org/fast-text-encoding/-/fast-text-encoding-1.0.0.tgz#3e5ce8293409cfaa7177a71b9ca84e1b1e6f25ef"
   integrity sha512-R9bHCvweUxxwkDwhjav5vxpFvdPGlVngtqmx4pIZfSUhM/Q4NiIUHB456BAf+Q1Nwu3HEZYONtu+Rya+af4jiQ==
 
-feathers-advance-hook@^0.0.7:
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/feathers-advance-hook/-/feathers-advance-hook-0.0.7.tgz#b4b8a516ecd15ac588f6cfd7f4afcac0245a4109"
-  integrity sha512-ywNd4eHITUbEEU+rTD2x2FHgGROF3faVM7Mi/rp6fbxj7jAvHJxRQwUm+yi1GxzJFHZOWRLo7WZY173uSPZF/A==
+feathers-advance-hook@^0.0.8:
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/feathers-advance-hook/-/feathers-advance-hook-0.0.8.tgz#a1c6c8f4f37f2dc8e497f8430f079016777805e5"
+  integrity sha512-GYp0jjd/OTpa3niLT0zGGzJZH8MotW7AmyTXOCSwucThfTguZ9zvcogduLkdWIpSuWJLN/xpfPgw72t8djhwbw==
   dependencies:
     "@feathersjs/feathers" "^4.5.2"
     "@google-cloud/storage" "^4.5.0"
