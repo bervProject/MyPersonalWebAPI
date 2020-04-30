@@ -71,9 +71,9 @@
     grant-profile "^0.0.11"
     lodash "^4.17.15"
 
-"@feathersjs/authentication@^4.5.2", "@feathersjs/authentication@^4.5.3":
+"@feathersjs/authentication@^4.5.3", "@feathersjs/authentication@^4.5.4":
   version "4.5.3"
-  resolved "https://registry.yarnpkg.com/@feathersjs/authentication/-/authentication-4.5.3.tgz#6f39749d999546b9e1a9117c249989385f45cd51"
+  resolved "https://registry.npmjs.org/@feathersjs/authentication/-/authentication-4.5.3.tgz#6f39749d999546b9e1a9117c249989385f45cd51"
   integrity sha512-OhwLktiULpKMk0hwMNI0Rn285xDjvhnVkyeg6QuQ+84jhb4dFNHp8gE29wgJS0tYXL6jJchq5b9VvguHyoThmQ==
   dependencies:
     "@feathersjs/errors" "^4.5.3"
@@ -91,9 +91,9 @@
   resolved "https://registry.yarnpkg.com/@feathersjs/commons/-/commons-4.5.3.tgz#72ea846c80b74e3251448486b7800e7550cb0fa1"
   integrity sha512-LsiZ0jxh13TT6SOrDq5VYtdBCv0Vdvu4a5Wei/Dvd/daZHX6ERuH6iQtfh2f5hFwuydtd+Ch/2GlYld8XziwhA==
 
-"@feathersjs/configuration@^4.5.3":
+"@feathersjs/configuration@^4.5.4":
   version "4.5.3"
-  resolved "https://registry.yarnpkg.com/@feathersjs/configuration/-/configuration-4.5.3.tgz#e65bbaf23202fe87c637dc427778b35a5aa58f90"
+  resolved "https://registry.npmjs.org/@feathersjs/configuration/-/configuration-4.5.3.tgz#e65bbaf23202fe87c637dc427778b35a5aa58f90"
   integrity sha512-CaVbrOBiEEeSf1R5XioIAb/u85Fktm3nu+3wwNwrVMgr7yk28qIB/+6G+2tf1SVl/gJV7nuKaBzotaDLYXqbqQ==
   dependencies:
     "@feathersjs/feathers" "^4.5.3"
@@ -107,7 +107,7 @@
   dependencies:
     debug "^4.0.0"
 
-"@feathersjs/errors@^4.4.3", "@feathersjs/errors@^4.5.2", "@feathersjs/errors@^4.5.3":
+"@feathersjs/errors@^4.4.3", "@feathersjs/errors@^4.5.2", "@feathersjs/errors@^4.5.3", "@feathersjs/errors@^4.5.4":
   version "4.5.3"
   resolved "https://registry.yarnpkg.com/@feathersjs/errors/-/errors-4.5.3.tgz#7476de0a9586f7290b1cbe5ff481ef293660a25b"
   integrity sha512-yvy5k0X79yQBxNSmjxU8rxRrKD/YnMjqAWzT/LbJ41UIOsvRzo88pqFuNXTX8qbB90IPjtxgbSjuaxoiQZ7nmg==
@@ -5103,6 +5103,11 @@ uuid@^7.0.2, uuid@^7.0.3:
   version "7.0.3"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-7.0.3.tgz#c5c9f2c8cf25dc0a372c4df1441c41f5bd0c680b"
   integrity sha512-DPSke0pXhTZgoF/d+WSt2QaKMCFSfx7QegxEWT+JOuHF5aWrKEn0G+ztjuJg/gG8/ItK+rbPCD/yNv8yyih6Cg==
+
+uuid@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.npmjs.org/uuid/-/uuid-8.0.0.tgz#bc6ccf91b5ff0ac07bbcdbf1c7c4e150db4dbb6c"
+  integrity sha512-jOXGuXZAWdsTH7eZLtyXMqUb9EcWMGZNbL9YcGBJl4MH4nrxHmZJhEHvyLFrkxo+28uLb/NYRcStH48fnD0Vzw==
 
 v8-compile-cache@^2.0.3:
   version "2.0.3"
