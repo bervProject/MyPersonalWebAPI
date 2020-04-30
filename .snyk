@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.13.5
+version: v1.14.1
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -41,3 +41,68 @@ patch:
         patched: '2019-10-03T23:53:19.552Z'
     - snyk > proxy-agent > pac-proxy-agent > https-proxy-agent:
         patched: '2019-10-03T23:53:19.552Z'
+  SNYK-JS-LODASH-567746:
+    - '@feathersjs/authentication-oauth > lodash':
+        patched: '2020-04-30T23:49:10.659Z'
+    - feathers-authentication-hooks > lodash:
+        patched: '2020-04-30T23:49:10.659Z'
+    - feathers-hooks-common > lodash:
+        patched: '2020-04-30T23:49:10.659Z'
+    - feathers-permissions > lodash:
+        patched: '2020-04-30T23:49:10.659Z'
+    - sequelize > lodash:
+        patched: '2020-04-30T23:49:10.659Z'
+    - snyk > lodash:
+        patched: '2020-04-30T23:49:10.659Z'
+    - '@feathersjs/authentication-oauth > @feathersjs/express > lodash':
+        patched: '2020-04-30T23:49:10.659Z'
+    - snyk > graphlib > lodash:
+        patched: '2020-04-30T23:49:10.659Z'
+    - snyk > @snyk/ruby-semver > lodash:
+        patched: '2020-04-30T23:49:10.659Z'
+    - snyk > inquirer > lodash:
+        patched: '2020-04-30T23:49:10.659Z'
+    - snyk > snyk-config > lodash:
+        patched: '2020-04-30T23:49:10.659Z'
+    - snyk > snyk-mvn-plugin > lodash:
+        patched: '2020-04-30T23:49:10.659Z'
+    - snyk > snyk-nodejs-lockfile-parser > lodash:
+        patched: '2020-04-30T23:49:10.659Z'
+    - snyk > snyk-nuget-plugin > lodash:
+        patched: '2020-04-30T23:49:10.659Z'
+    - winston > async > lodash:
+        patched: '2020-04-30T23:49:10.659Z'
+    - '@feathersjs/authentication-oauth > @feathersjs/authentication > @feathersjs/transport-commons > lodash':
+        patched: '2020-04-30T23:49:10.659Z'
+    - snyk > @snyk/dep-graph > graphlib > lodash:
+        patched: '2020-04-30T23:49:10.659Z'
+    - snyk > snyk-go-plugin > graphlib > lodash:
+        patched: '2020-04-30T23:49:10.659Z'
+    - snyk > snyk-nodejs-lockfile-parser > graphlib > lodash:
+        patched: '2020-04-30T23:49:10.659Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/dep-graph > lodash:
+        patched: '2020-04-30T23:49:10.659Z'
+    - snyk > snyk-nodejs-lockfile-parser > snyk-config > lodash:
+        patched: '2020-04-30T23:49:10.659Z'
+    - snyk > snyk-mvn-plugin > @snyk/java-call-graph-builder > lodash:
+        patched: '2020-04-30T23:49:10.659Z'
+    - snyk > snyk-nuget-plugin > dotnet-deps-parser > lodash:
+        patched: '2020-04-30T23:49:10.659Z'
+    - snyk > snyk-php-plugin > @snyk/composer-lockfile-parser > lodash:
+        patched: '2020-04-30T23:49:10.659Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/dep-graph > graphlib > lodash:
+        patched: '2020-04-30T23:49:10.659Z'
+    - snyk > snyk-mvn-plugin > @snyk/java-call-graph-builder > graphlib > lodash:
+        patched: '2020-04-30T23:49:10.659Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/cocoapods-lockfile-parser > @snyk/ruby-semver > lodash:
+        patched: '2020-04-30T23:49:10.659Z'
+    - snyk > snyk-docker-plugin > @snyk/rpm-parser > eslint > lodash:
+        patched: '2020-04-30T23:49:10.659Z'
+    - snyk > snyk-mvn-plugin > @snyk/java-call-graph-builder > snyk-config > lodash:
+        patched: '2020-04-30T23:49:10.659Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/cocoapods-lockfile-parser > @snyk/dep-graph > graphlib > lodash:
+        patched: '2020-04-30T23:49:10.659Z'
+    - snyk > snyk-docker-plugin > @snyk/rpm-parser > eslint > inquirer > lodash:
+        patched: '2020-04-30T23:49:10.659Z'
+    - snyk > snyk-docker-plugin > @snyk/rpm-parser > eslint > table > lodash:
+        patched: '2020-04-30T23:49:10.659Z'
