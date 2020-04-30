@@ -47,7 +47,7 @@
     "feathers-authentication-hooks": "^1.0.2",
     "feathers-hooks-common": "^5.0.3",
     "feathers-permissions": "^2.0.2",
-    "feathers-sequelize": "^6.1.0",
+    "feathers-sequelize": "^6.2.0",
     "helmet": "^3.22.0",
     "pg": "^8.0.3",
     "sequelize": "^5.21.7",
