@@ -28,7 +28,8 @@
     "start": "node src/",
     "debug": "node --inspect src/",
     "mocha": "mocha test/ --recursive --exit",
-    "snyk-protect": "snyk protect"
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "@feathersjs/authentication": "^4.5.4",
@@ -52,7 +53,7 @@
     "pg": "^8.0.3",
     "sequelize": "^5.21.7",
     "serve-favicon": "^2.5.0",
-    "snyk": "^1.315.1",
+    "snyk": "^1.316.1",
     "uuid": "^8.0.0",
     "winston": "^3.2.1"
   },
