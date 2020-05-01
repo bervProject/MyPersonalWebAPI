@@ -1,9 +1,12 @@
 # MyPersonalWebAPI
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a5f20a7ca388403f984c327e380826e2)](https://app.codacy.com/app/berviantoleo/MyPersonalWebAPI?utm_source=github.com&utm_medium=referral&utm_content=bervProject/MyPersonalWebAPI&utm_campaign=Badge_Grade_Settings)
-![Build Status](https://travis-ci.org/bervProject/MyPersonalWebAPI.svg?branch=master)
-
 > Web API for Bervianto&#39;s Web
+
+## Build Status
+
+| Codacy | Travis |
+|:------:|:------:|
+| [![Codacy Badge](https://api.codacy.com/project/badge/Grade/a5f20a7ca388403f984c327e380826e2)](https://app.codacy.com/app/berviantoleo/MyPersonalWebAPI?utm_source=github.com&utm_medium=referral&utm_content=bervProject/MyPersonalWebAPI&utm_campaign=Badge_Grade_Settings) | ![Build Status](https://travis-ci.org/bervProject/MyPersonalWebAPI.svg?branch=master) |
 
 ## Notes (Requirement for Development or Production)
 
