@@ -50,7 +50,7 @@
     "feathers-permissions": "^2.0.2",
     "feathers-sequelize": "^6.2.0",
     "helmet": "^3.23.3",
-    "pg": "^8.2.2",
+    "pg": "^8.3.0",
     "sequelize": "^6.3.0",
     "serve-favicon": "^2.5.0",
     "snyk": "^1.360.0",
