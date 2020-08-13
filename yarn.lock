@@ -397,12 +397,12 @@
     lodash "^4.17.19"
     uberproto "^2.0.6"
 
-"@feathersjs/feathers@^4.5.2", "@feathersjs/feathers@^4.5.3", "@feathersjs/feathers@^4.5.5", "@feathersjs/feathers@^4.5.7":
-  version "4.5.7"
-  resolved "https://registry.yarnpkg.com/@feathersjs/feathers/-/feathers-4.5.7.tgz#ed3b87e43d6dbef298c0ad67331425f18098bf80"
-  integrity sha512-Qbw5e5Y5mJkxZOrgbaZXj2w0smoBJf2goud1Du+kNRMJfcexZ/tQDtPj6aFOIl6dduyB/3Xka4XQQn/T+rHB4w==
+"@feathersjs/feathers@^4.5.2", "@feathersjs/feathers@^4.5.3", "@feathersjs/feathers@^4.5.7", "@feathersjs/feathers@^4.5.8":
+  version "4.5.8"
+  resolved "https://registry.yarnpkg.com/@feathersjs/feathers/-/feathers-4.5.8.tgz#4d9e7fe035d568f5186c7d4669b57ab97a809d53"
+  integrity sha512-6d8oOPGZu4unda4XXNXV8nzaUI/OsUXY7s30HFDFvf7c81A2oe2uQ/u8OdGEiKpKcX5Ugq9lKYhiYCvMM3dibA==
   dependencies:
-    "@feathersjs/commons" "^4.5.7"
+    "@feathersjs/commons" "^4.5.8"
     debug "^4.1.1"
     events "^3.2.0"
     uberproto "^2.0.6"
