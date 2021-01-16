@@ -1,5 +1,5 @@
 // Application hooks that run for every service
-import log from "./hooks/log";
+import log from './hooks/log';
 
 export default {
   before: {

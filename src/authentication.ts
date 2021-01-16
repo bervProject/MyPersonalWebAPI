@@ -1,16 +1,17 @@
-import { ServiceAddons, Params } from "@feathersjs/feathers";
+import { ServiceAddons, Params } from '@feathersjs/feathers';
 import {
   AuthenticationService,
   JWTStrategy,
   AuthenticationResult,
-} from "@feathersjs/authentication";
-import { LocalStrategy } from "@feathersjs/authentication-local";
-import { expressOauth } from "@feathersjs/authentication-oauth";
+} from '@feathersjs/authentication';
+import { LocalStrategy } from '@feathersjs/authentication-local';
+import { expressOauth } from '@feathersjs/authentication-oauth';
 
-import { Application } from "./declarations";
+import { Application } from './declarations';
 
-declare module "./declarations" {
+declare module './declarations' {
   interface ServiceTypes {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     authentication: AuthenticationService & ServiceAddons<any>;
   }
 }
@@ -29,12 +30,12 @@ class MyAuthenticationService extends AuthenticationService {
   }
 }
 
-export default function (app: Application) {
+export default function (app: Application): void {
   const authentication = new MyAuthenticationService(app);
 
-  authentication.register("jwt", new JWTStrategy());
-  authentication.register("local", new LocalStrategy());
+  authentication.register('jwt', new JWTStrategy());
+  authentication.register('local', new LocalStrategy());
 
-  app.use("/authentication", authentication);
+  app.use('/authentication', authentication);
   app.configure(expressOauth());
 }
