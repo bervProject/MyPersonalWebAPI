@@ -1,4 +1,27 @@
 {
-  "host": "bervianto-web-api.herokuapp.com",
-  "port": "14444"
+  "host": "HOSTNAME",
+  "port": "PORT",
+  "authentication": {
+    "entity": "user",
+    "service": "users",
+    "secret": "API_SECRET",
+    "authStrategies": [
+      "jwt",
+      "local"
+    ],
+    "jwtOptions": {
+      "header": {
+        "typ": "access"
+      },
+      "audience": "API_AUDIANCE",
+      "issuer": "bervLeo",
+      "algorithm": "HS256",
+      "expiresIn": "1d"
+    },
+    "local": {
+      "usernameField": "email",
+      "passwordField": "password"
+    }
+  },
+  "postgres": "DATABASE_URL"
 }

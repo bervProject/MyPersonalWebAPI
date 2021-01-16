@@ -10,5 +10,4 @@ FROM node:12-alpine as runner
 # Bundle app source
 COPY --from=build /usr/src/app /usr/src/app
 WORKDIR /usr/src/app
-EXPOSE 14444
 CMD [ "yarn", "start" ]
