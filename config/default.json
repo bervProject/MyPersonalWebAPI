@@ -24,6 +24,18 @@
       "algorithm": "HS256",
       "expiresIn": "1d"
     },
+    "oauth": {
+      "redirect": "/frontend",
+      "google": {
+        "key": "",
+        "secret": "",
+        "scope": [
+          "openid",
+          "email"
+        ],
+        "nonce": true
+      }
+    },
     "local": {
       "usernameField": "email",
       "passwordField": "password"

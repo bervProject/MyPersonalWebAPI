@@ -26,6 +26,14 @@ export default function (app: Application): ModelCtor<Model<UserModel>> {
         type: DataTypes.STRING,
         allowNull: false,
       },
+      googleId: {
+        type: DataTypes.STRING,
+        allowNull: true
+      },
+      profilePicture: {
+        type: DataTypes.STRING,
+        allowNull: true
+      }      
     },
     {
       hooks: {

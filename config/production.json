@@ -18,6 +18,18 @@
       "algorithm": "HS256",
       "expiresIn": "1d"
     },
+    "oauth": {
+      "redirect": "FRONTEND_URL",
+      "google": {
+        "key": "GOOGLE_KEY",
+        "secret": "GOOGLE_SECRET",
+        "scope": [
+          "openid",
+          "email"
+        ],
+        "nonce": true
+      }
+    },
     "local": {
       "usernameField": "email",
       "passwordField": "password"
