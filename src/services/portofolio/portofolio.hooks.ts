@@ -1,7 +1,6 @@
 import * as feathersAuthentication from '@feathersjs/authentication';
-import hook from 'feathers-advance-hook';
+import { userAuditHook } from '@bervproject/feathers-advance-hook';
 const { authenticate } = feathersAuthentication.hooks;
-const { userAuditHook } = hook;
 export default {
   before: {
     all: [],
