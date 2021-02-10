@@ -16,7 +16,7 @@ env:
   HEROKU_APP_NAME: bervianto-web-api
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     strategy:
       matrix:
         node-version: [12.x, 14.x]
@@ -39,6 +39,7 @@ jobs:
       run: bash <(curl -s https://codecov.io/bash)
   docker-build:
     needs: build
+    runs-on: ubuntu-20.04
     if: github.event_name == 'pull_request'
     steps:
       - uses: actions/checkout@v2
@@ -49,7 +50,7 @@ jobs:
   docker-push:
     # Ensure test job passes before pushing image.
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     if: github.event_name == 'push'
     steps:
       - uses: actions/checkout@v2
