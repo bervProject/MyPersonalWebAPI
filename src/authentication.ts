@@ -31,23 +31,24 @@ class MyAuthenticationService extends AuthenticationService {
   }
 }
 
-
 class GoogleStrategy extends OAuthStrategy {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   async getEntityData(profile: OAuthProfile, existing: any, params: Params) {
-    params.provider = undefined;  
+    params.provider = undefined;
     // this will set 'googleId'
     const baseData = await super.getEntityData(profile, existing, params);
-    
+
     // this will grab the picture and email address of the Google profile
     return {
       ...baseData,
       profilePicture: profile.picture,
-      email: profile.email
+      email: profile.email,
     };
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   async getEntityQuery(profile: OAuthProfile, params: Params) {
-    let query = {
+    const query = {
       $or: [
         { [`${this.name}Id`]: profile.sub || profile.id },
         { email: profile.email },

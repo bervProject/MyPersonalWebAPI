@@ -26,7 +26,8 @@
   "scripts": {
     "test": "jest  --forceExit",
     "dev": "ts-node-dev --no-notify src/",
-    "lint": "eslint src/**/*.{js,ts} test/**/*.{js,ts} --quiet --fix",
+    "lint": "eslint \"src/**/*.{js,ts}\" \"test/**/*.{js,ts}\"",
+    "fix-lint": "eslint \"src/**/*.{js,ts}\" \"test/**/*.{js,ts}\" --quiet --fix",
     "start": "yarn run compile && cross-env NODE_ENV=production node lib/",
     "start:prod": "cross-env NODE_ENV=production node lib/",
     "compile": "shx rm -rf lib/ && tsc"
@@ -74,7 +75,7 @@
     "axios": "^0.21.1",
     "cross-env": "^7.0.3",
     "eslint": "^7.21.0",
-    "eslint-config-prettier": "^7.2.0",
+    "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-prettier": "^3.3.1",
     "jest": "^26.6.3",
     "nodemon": "^2.0.7",

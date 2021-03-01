@@ -28,12 +28,12 @@ export default function (app: Application): ModelCtor<Model<UserModel>> {
       },
       googleId: {
         type: DataTypes.STRING,
-        allowNull: true
+        allowNull: true,
       },
       profilePicture: {
         type: DataTypes.STRING,
-        allowNull: true
-      }      
+        allowNull: true,
+      },
     },
     {
       hooks: {
