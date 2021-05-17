@@ -73,7 +73,7 @@ jobs:
           echo VERSION=$VERSION
           docker tag $IMAGE_NAME $IMAGE_ID:$VERSION
           docker push $IMAGE_ID:$VERSION
-      - uses: akhileshns/heroku-deploy@v3.10.9 # This is the action
+      - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
         if: ${{ github.ref == 'refs/heads/master' }}
         with:
           heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
