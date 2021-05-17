@@ -47,7 +47,8 @@ jobs:
       run: |
         npm i -g @railway/cli
         [[ "${{ github.ref }}" == "refs/heads/master" ]] && RAILWAY_GIT_BRANCH=staging
-        RAILWAY_TOKEN=${RAILWAY_TOKEN} railway link 336af26a-000e-41ec-b99d-24fa372a274c
+        railway login
+        railway link 336af26a-000e-41ec-b99d-24fa372a274c
         railway status
         railway up
   docker-build:
