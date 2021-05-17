@@ -16,7 +16,7 @@ COPY --from=build /app/lib /app/lib
 COPY package.json yarn.lock .npmrc  ./
 COPY config/ /app/config
 COPY public/ /app/public
-RUN yarn --frozen-lockfile --production && rm -f .npmrc
+RUN yarn --frozen-lockfile --production && rm -fv .npmrc
 RUN adduser -D mpwa
 USER mpwa
 CMD [ "yarn", "start:prod" ]
