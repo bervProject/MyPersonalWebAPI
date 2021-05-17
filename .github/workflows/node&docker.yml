@@ -41,12 +41,13 @@ jobs:
     - name: Codecov
       run: bash <(curl -s https://codecov.io/bash)
     - name: Push to Railway
-      if: ${{ github.event_name == 'push' }}
+      if: ${{ github.event_name == 'push' && matrix.node-version == '14.x' }}
       env:
-        RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN && matrix.node-version == '14.x' }}
+        RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
       run: |
         npm i -g @railway/cli
         [[ "${{ github.ref }}" == "refs/heads/master" ]] && RAILWAY_GIT_BRANCH=staging
+        railway link
         railway status
         railway up
   docker-build:
