@@ -5,7 +5,6 @@ WORKDIR /app
 COPY package.json yarn.lock .npmrc ./
 RUN apk add --no-cache git && yarn --frozen-lockfile
 COPY . .
-RUN rm -f .npmrc
 RUN yarn compile
 
 FROM node:14-alpine as runner
