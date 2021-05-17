@@ -4,11 +4,13 @@ on:
     # Publish `master` as Docker `latest` image.
     branches:
       - master
+      - production
     # Publish `v1.2.3` tags as releases.
     tags:
       - v*
-  # Run tests for any PRs.
   pull_request:
+    - master
+    - production
 env:
   # TODO: Change variable to your image's name.
   IMAGE_NAME: personal-web
@@ -37,6 +39,15 @@ jobs:
         CI: true
     - name: Codecov
       run: bash <(curl -s https://codecov.io/bash)
+    - name: Push to Railway
+      if: ${{ github.event_name == 'push' }}
+      env:
+        RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+      run: |
+        npm i -g @railway/cli
+        [[ "${{ github.ref }}" == "refs/heads/master" ]] && RAILWAY_GIT_BRANCH=staging
+        railway status
+        railway up
   docker-build:
     needs: build
     runs-on: ubuntu-20.04
