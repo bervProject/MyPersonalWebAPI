@@ -28,7 +28,7 @@ export default function (app: Application): ModelCtor<Model<BlogModel>> {
         type: DataTypes.STRING,
         allowNull: false,
       },
-      modifiedBy: {
+      updatedBy: {
         type: DataTypes.STRING,
         allowNull: true,
       },
