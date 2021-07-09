@@ -1,15 +1,45 @@
 import * as feathersAuthentication from '@feathersjs/authentication';
 import { userAuditHook } from '@bervproject/feathers-advance-hook';
 const { authenticate } = feathersAuthentication.hooks;
+import checkPermissions from 'feathers-permissions';
+
 export default {
   before: {
     all: [],
     find: [],
     get: [],
-    create: [authenticate('jwt'), userAuditHook()],
-    update: [authenticate('jwt'), userAuditHook()],
-    patch: [authenticate('jwt'), userAuditHook()],
-    remove: [authenticate('jwt')],
+    create: [
+      authenticate('jwt'),
+      checkPermissions({
+        roles: ['admin'],
+        field: 'role',
+      }),
+      userAuditHook(),
+    ],
+    update: [
+      authenticate('jwt'),
+      checkPermissions({
+        roles: ['admin'],
+        field: 'role',
+      }),
+      userAuditHook(),
+    ],
+    patch: [
+      authenticate('jwt'),
+      checkPermissions({
+        roles: ['admin'],
+        field: 'role',
+      }),
+      userAuditHook(),
+    ],
+    remove: [
+      authenticate('jwt'),
+      checkPermissions({
+        roles: ['admin'],
+        field: 'role',
+      }),
+      userAuditHook(),
+    ],
   },
   after: {
     all: [],
