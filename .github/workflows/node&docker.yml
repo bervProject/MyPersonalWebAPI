@@ -29,14 +29,16 @@ jobs:
         node-version: ${{ matrix.node-version }}
         registry-url: https://npm.pkg.github.com/
         always-auth: true
-    - name: yarn and yarn test
+    - name: Install
+      run: yarn --frozen-lockfile
+    - name: lint
+      run: yarn lint
+    - name: Test & Build
       run: |
-        yarn --frozen-lockfile
         yarn test
         yarn compile
-      env:
-        CI: true
     - name: Codecov
+      if: ${{ matrix.node-version == '14.x' }}
       run: bash <(curl -s https://codecov.io/bash)
   docker-build:
     needs: build
