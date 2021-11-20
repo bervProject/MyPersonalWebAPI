@@ -40,6 +40,16 @@ jobs:
     - name: Codecov
       if: ${{ matrix.node-version == '14.x' }}
       run: bash <(curl -s https://codecov.io/bash)
+  deploy-railway:
+    runs-on: ubuntu-20.04
+    needs: build
+    if: github.event_name == 'push'
+    steps:
+      - uses: actions/checkout@v2
+      - name: Railway deploy
+        uses: bervProject/railway-deploy@0.0.1-alpha
+        env:
+          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
   docker-build:
     needs: build
     runs-on: ubuntu-20.04
