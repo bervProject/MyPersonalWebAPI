@@ -1,19 +1,16 @@
 name: Node&Docker
 on:
   push:
-    # Publish `master` as Docker `latest` image.
     branches:
-      - master
+      - main
       - production
-    # Publish `v1.2.3` tags as releases.
     tags:
       - v*
   pull_request:
     branches:
-      - master
+      - main
       - production
 env:
-  # TODO: Change variable to your image's name.
   IMAGE_NAME: personal-web
 jobs:
   build:
