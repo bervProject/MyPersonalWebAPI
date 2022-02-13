@@ -2,7 +2,6 @@
 // for more of what you can do here.
 import { Sequelize, DataTypes, Model, ModelCtor } from 'sequelize';
 import { Application } from '../declarations';
-import { HookReturn } from 'sequelize/types/lib/hooks';
 
 export interface BlogModel {
   content: string;
@@ -36,7 +35,7 @@ export default function (app: Application): ModelCtor<Model<BlogModel>> {
     {
       hooks: {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        beforeCount(options: any): HookReturn {
+        beforeCount(options: any): void {
           options.raw = true;
         },
       },

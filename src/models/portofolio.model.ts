@@ -40,7 +40,7 @@ export default function (app: Application): ModelCtor<Model<PortofolioModel>> {
     {
       hooks: {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        beforeCount(options: any) {
+        beforeCount(options: any): void {
           options.raw = true;
         },
       },
