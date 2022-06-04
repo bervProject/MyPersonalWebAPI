@@ -44,7 +44,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Railway deploy
-        uses: bervProject/railway-deploy@0.0.5-alpha
+        uses: bervProject/railway-deploy@0.0.6-alpha
         env:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
   docker-build:
