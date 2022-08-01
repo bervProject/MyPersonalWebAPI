@@ -49,7 +49,7 @@
     "cors": "^2.8.5",
     "cross-env": "^7.0.3",
     "feathers-authentication-hooks": "^1.0.2",
-    "feathers-hooks-common": "^6.1.4",
+    "feathers-hooks-common": "^6.1.5",
     "feathers-permissions": "^2.1.4",
     "feathers-sequelize": "^6.3.4",
     "helmet": "^5.1.1",
