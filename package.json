@@ -52,7 +52,7 @@
     "feathers-hooks-common": "^6.1.5",
     "feathers-permissions": "^2.1.4",
     "feathers-sequelize": "^6.4.0",
-    "helmet": "^6.0.0",
+    "helmet": "^6.0.1",
     "pg": "^8.8.0",
     "sequelize": "^6.25.8",
     "serve-favicon": "^2.5.0",
