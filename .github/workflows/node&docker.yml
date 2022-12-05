@@ -37,16 +37,6 @@ jobs:
     - uses: codecov/codecov-action@v3
       name: Codecov
       if: ${{ matrix.node-version == '16.x' }}
-  deploy-railway:
-    runs-on: ubuntu-20.04
-    needs: build
-    if: github.event_name == 'push'
-    steps:
-      - uses: actions/checkout@v3
-      - name: Railway deploy
-        uses: bervProject/railway-deploy@0.0.7-alpha
-        env:
-          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
   docker-build:
     needs: build
     runs-on: ubuntu-22.04

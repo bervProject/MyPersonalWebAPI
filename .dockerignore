@@ -3,3 +3,7 @@ npm-debug.log
 lib/
 coverage/
 test/
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+.git
+.gitignore

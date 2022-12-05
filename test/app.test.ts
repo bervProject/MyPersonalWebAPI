@@ -1,17 +1,15 @@
 import { Server } from 'http';
-import url from 'url';
 import axios from 'axios';
 
 import app from '../src/app';
 
 const port = app.get('port') || 8998;
-const getUrl = (pathname?: string) =>
-  url.format({
-    hostname: app.get('host') || 'localhost',
-    protocol: 'http',
-    port,
-    pathname,
-  });
+const getUrl = (pathname?: string) => {
+  const url = new URL(`http://${app.get('host') || 'localhost'}/`);
+  url.pathname = pathname || '';
+  url.port = port;
+  return url.href;
+}
 
 describe('Feathers application tests (with jest)', () => {
   let server: Server;
@@ -41,7 +39,9 @@ describe('Feathers application tests (with jest)', () => {
         await axios.get(getUrl('path/to/nowhere'), {
           headers: {
             Accept: 'text/html',
+            'Accept-Encoding': 'text/html; charset=UTF-8',
           },
+          responseType: 'text',
         });
       } catch (error) {
         if (axios.isAxiosError(error) && error.response) {
