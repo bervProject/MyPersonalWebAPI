@@ -9,7 +9,7 @@ const getUrl = (pathname?: string) => {
   url.pathname = pathname || '';
   url.port = port;
   return url.href;
-}
+};
 
 describe('Feathers application tests (with jest)', () => {
   let server: Server;
