@@ -66,7 +66,7 @@
     "@types/cors": "^2.8.14",
     "@types/jest": "^29.5.5",
     "@types/jsonwebtoken": "^9.0.3",
-    "@types/serve-favicon": "^2.5.4",
+    "@types/serve-favicon": "^2.5.5",
     "@types/uuid": "^9.0.0",
     "@types/validator": "^13.11.2",
     "@typescript-eslint/eslint-plugin": "^6.7.2",
