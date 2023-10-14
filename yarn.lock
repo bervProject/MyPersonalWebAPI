@@ -468,10 +468,10 @@
   dependencies:
     debug "^4.3.3"
 
-"@feathersjs/errors@^5.0.10":
-  version "5.0.10"
-  resolved "https://registry.yarnpkg.com/@feathersjs/errors/-/errors-5.0.10.tgz#a3c24f4b25a2ce628bbb3a0802dd1b823e06b8e1"
-  integrity sha512-gseAgDdrvaBcZzXt0ud/ABQKbXk9txu9ypiK9M8WNbo5lS+AiKbSQZxVuPssce68qNuhfLzRPvXvPi1Wk4V9jQ==
+"@feathersjs/errors@^5.0.11":
+  version "5.0.11"
+  resolved "https://registry.yarnpkg.com/@feathersjs/errors/-/errors-5.0.11.tgz#b2f98e93762e502bf77f3601440e22b7c23c3aae"
+  integrity sha512-rFVFgGOoQmOh+B8n/Xef3fLDaJaewD3TeVo451lBZjjqQZqgS4XrsEVOKjFtj0ozRBfiZ7AzkzlZEgqDO9syvw==
 
 "@feathersjs/express@^4.5.15":
   version "4.5.15"
