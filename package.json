@@ -62,7 +62,7 @@
   "devDependencies": {
     "@types/bluebird": "^3.5.40",
     "@types/cls-hooked": "^4.3.6",
-    "@types/compression": "^1.7.3",
+    "@types/compression": "^1.7.4",
     "@types/cors": "^2.8.14",
     "@types/jest": "^29.5.5",
     "@types/jsonwebtoken": "^9.0.3",
