@@ -37,6 +37,8 @@ jobs:
     - uses: codecov/codecov-action@v4
       name: Codecov
       if: ${{ matrix.node-version == '20.x' }}
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }} # required
   docker-build:
     needs: build
     runs-on: ubuntu-22.04
