@@ -64,7 +64,7 @@
     "@types/cls-hooked": "^4.3.9",
     "@types/compression": "^1.7.5",
     "@types/cors": "^2.8.17",
-    "@types/jest": "^29.5.13",
+    "@types/jest": "^29.5.14",
     "@types/jsonwebtoken": "^9.0.7",
     "@types/serve-favicon": "^2.5.7",
     "@types/uuid": "^9.0.0",
