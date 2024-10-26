@@ -54,7 +54,7 @@
     "feathers-sequelize": "^6.4.0",
     "helmet": "^8.0.0",
     "pg": "^8.13.0",
-    "sequelize": "^6.37.4",
+    "sequelize": "^6.37.5",
     "serve-favicon": "^2.5.0",
     "uuid": "^8.3.2",
     "winston": "^3.15.0"
