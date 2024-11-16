@@ -34,7 +34,7 @@ jobs:
       run: |
         yarn test
         yarn compile
-    - uses: codecov/codecov-action@v4
+    - uses: codecov/codecov-action@v5
       name: Codecov
       if: ${{ matrix.node-version == '20.x' }}
       with:
