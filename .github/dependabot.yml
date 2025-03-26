@@ -15,6 +15,10 @@ updates:
   - berviantoleo
   labels:
   - dependencies
+  groups:
+    feathersjs:
+      patterns:
+        - "@feathersjs*"
   
 - package-ecosystem: github-actions
   directory: "/"
