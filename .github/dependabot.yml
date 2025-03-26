@@ -19,6 +19,7 @@ updates:
     feathersjs:
       patterns:
         - "@feathersjs*"
+        - "feathers*"
   
 - package-ecosystem: github-actions
   directory: "/"
