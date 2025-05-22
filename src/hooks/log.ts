@@ -28,4 +28,4 @@ export default () => {
       logger.error(context.error.stack);
     }
   };
-}
+};

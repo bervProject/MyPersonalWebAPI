@@ -1,3 +1,3 @@
 import { SequelizeService } from 'feathers-sequelize';
 
-export class Education extends SequelizeService { }
+export class Education extends SequelizeService {}

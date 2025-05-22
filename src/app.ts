@@ -7,8 +7,14 @@ import cors from 'cors';
 import { feathers } from '@feathersjs/feathers';
 import configuration from '@feathersjs/configuration';
 import express, {
-    json, urlencoded, static as staticFiles, rest, notFound, errorHandler
-} from '@feathersjs/express';import socketio from '@feathersjs/socketio';
+  json,
+  urlencoded,
+  static as staticFiles,
+  rest,
+  notFound,
+  errorHandler,
+} from '@feathersjs/express';
+import socketio from '@feathersjs/socketio';
 
 import { Application } from './declarations';
 import logger from './logger';

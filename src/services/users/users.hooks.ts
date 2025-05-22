@@ -1,7 +1,7 @@
 import * as feathersAuthentication from '@feathersjs/authentication';
 import { iff } from 'feathers-hooks-common';
 import { passwordHash } from '@feathersjs/authentication-local';
-import { resolve, hooks as schemaHooks } from '@feathersjs/schema'
+import { resolve, hooks as schemaHooks } from '@feathersjs/schema';
 import { setField } from 'feathers-authentication-hooks';
 import checkPermissions from 'feathers-permissions';
 import { Application, HookContext } from '../../declarations';
@@ -11,19 +11,18 @@ import { Users } from './users.class';
 
 const { authenticate } = feathersAuthentication.hooks;
 
-
 export const userExternalResolver = resolve<typeof User, HookContext>({
   properties: {
     // The password should never be visible externally
-    password: async () => undefined
-  }
-})
+    password: async () => undefined,
+  },
+});
 
 export const userDataResolver = resolve<typeof User, HookContext>({
   properties: {
-    password: passwordHash({ strategy: 'local' })
-  }
-})
+    password: passwordHash({ strategy: 'local' }),
+  },
+});
 
 const restrict = [
   authenticate('jwt'),
@@ -33,6 +32,7 @@ const restrict = [
     error: false,
   }),
   iff(
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (context) => !(context.param as any)?.permitted,
     setField({
       from: 'params.user.id',
@@ -60,9 +60,7 @@ export default {
   },
 
   after: {
-    all: [
-      schemaHooks.resolveExternal(userExternalResolver),
-    ],
+    all: [schemaHooks.resolveExternal(userExternalResolver)],
     find: [],
     get: [],
     create: [],
