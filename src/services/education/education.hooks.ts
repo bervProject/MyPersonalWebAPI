@@ -2,6 +2,9 @@ import * as feathersAuthentication from '@feathersjs/authentication';
 import { userAuditHook } from '@bervproject/feathers-advance-hook';
 const { authenticate } = feathersAuthentication.hooks;
 import checkPermissions from 'feathers-permissions';
+import { HookOptions } from '@feathersjs/feathers';
+import { Application } from '../../declarations';
+import { Education } from './education.class';
 
 export default {
   before: {
@@ -59,4 +62,4 @@ export default {
     patch: [],
     remove: [],
   },
-};
+} as HookOptions<Application, Education>;

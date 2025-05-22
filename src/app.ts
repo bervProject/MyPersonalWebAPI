@@ -4,9 +4,16 @@ import compress from 'compression';
 import helmet from 'helmet';
 import cors from 'cors';
 
-import feathers from '@feathersjs/feathers';
+import { feathers } from '@feathersjs/feathers';
 import configuration from '@feathersjs/configuration';
-import express from '@feathersjs/express';
+import express, {
+  json,
+  urlencoded,
+  static as staticFiles,
+  rest,
+  notFound,
+  errorHandler,
+} from '@feathersjs/express';
 import socketio from '@feathersjs/socketio';
 
 import { Application } from './declarations';
@@ -26,14 +33,14 @@ app.configure(configuration());
 app.use(helmet());
 app.use(cors());
 app.use(compress());
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(json());
+app.use(urlencoded({ extended: true }));
 app.use(favicon(path.join(app.get('public'), 'favicon.ico')));
 // Host the public folder
-app.use('/', express.static(app.get('public')));
+app.use('/', staticFiles(app.get('public')));
 
 // Set up Plugins and providers
-app.configure(express.rest());
+app.configure(rest());
 app.configure(socketio());
 
 app.configure(sequelize);
@@ -47,8 +54,8 @@ app.configure(services);
 app.configure(channels);
 
 // Configure a middleware for 404s and the error handler
-app.use(express.notFound());
-app.use(express.errorHandler({ logger }));
+app.use(notFound());
+app.use(errorHandler({ logger }));
 
 app.hooks(appHooks);
 

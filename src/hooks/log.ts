@@ -3,12 +3,12 @@
 // about the logger.
 import logger from '../logger';
 import util from 'util';
-import { HookContext, Hook } from '@feathersjs/feathers';
+import { HookContext } from '../declarations';
 
 // To see more detailed messages, uncomment the following line:
 logger.level = 'debug';
 
-export default function (): Hook {
+export default () => {
   return (context: HookContext) => {
     // This debugs the service call and a stringified version of the hook context
     // You can customize the message (and logger) to your needs
@@ -28,4 +28,4 @@ export default function (): Hook {
       logger.error(context.error.stack);
     }
   };
-}
+};

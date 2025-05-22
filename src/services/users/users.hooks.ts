@@ -1,11 +1,28 @@
 import * as feathersAuthentication from '@feathersjs/authentication';
 import { iff } from 'feathers-hooks-common';
-import * as local from '@feathersjs/authentication-local';
+import { passwordHash } from '@feathersjs/authentication-local';
+import { resolve, hooks as schemaHooks } from '@feathersjs/schema';
 import { setField } from 'feathers-authentication-hooks';
 import checkPermissions from 'feathers-permissions';
+import { Application, HookContext } from '../../declarations';
+import User from '../../models/users.model';
+import { HookOptions } from '@feathersjs/feathers';
+import { Users } from './users.class';
 
 const { authenticate } = feathersAuthentication.hooks;
-const { hashPassword, protect } = local.hooks;
+
+export const userExternalResolver = resolve<typeof User, HookContext>({
+  properties: {
+    // The password should never be visible externally
+    password: async () => undefined,
+  },
+});
+
+export const userDataResolver = resolve<typeof User, HookContext>({
+  properties: {
+    password: passwordHash({ strategy: 'local' }),
+  },
+});
 
 const restrict = [
   authenticate('jwt'),
@@ -15,7 +32,8 @@ const restrict = [
     error: false,
   }),
   iff(
-    (context) => !context.params.permitted,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    (context) => !(context.param as any)?.permitted,
     setField({
       from: 'params.user.id',
       as: 'params.query.id',
@@ -34,19 +52,15 @@ export default {
         roles: ['admin'],
         field: 'role',
       }),
-      hashPassword('password'),
+      schemaHooks.resolveData(userDataResolver),
     ],
-    update: [...restrict, hashPassword('password')],
-    patch: [...restrict, hashPassword('password')],
+    update: [...restrict, schemaHooks.resolveData(userDataResolver)],
+    patch: [...restrict, schemaHooks.resolveData(userDataResolver)],
     remove: [...restrict],
   },
 
   after: {
-    all: [
-      // Make sure the password field is never sent to the client
-      // Always must be the last hook
-      protect('password'),
-    ],
+    all: [schemaHooks.resolveExternal(userExternalResolver)],
     find: [],
     get: [],
     create: [],
@@ -64,4 +78,4 @@ export default {
     patch: [],
     remove: [],
   },
-};
+} as HookOptions<Application, Users>;
