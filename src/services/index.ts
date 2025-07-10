@@ -5,7 +5,6 @@ import portofolio from './portofolio/portofolio.service';
 import users from './users/users.service';
 import blog from './blog/blog.service';
 
-// eslint-disable-next-line no-unused-vars
 export default function (app: Application): void {
   app.configure(experience);
   app.configure(education);
