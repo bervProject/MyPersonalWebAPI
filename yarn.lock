@@ -547,17 +547,17 @@
   resolved "https://registry.npmjs.org/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@bervproject/feathers-advance-hook@^2.0.4":
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/@bervproject/feathers-advance-hook/-/feathers-advance-hook-2.0.4.tgz#248d848f56cf14dfee24dfd35f3cc572fcde96c3"
-  integrity sha512-dEz2S9+HySv2iWFUipsZRcb7ViMpgf8ANw5loJSwvKB67M/8JyMW5Eszoo4gKsjqgMc7ldDDoRYkscqAUxnW8w==
+"@bervproject/feathers-advance-hook@^2.0.5":
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/@bervproject/feathers-advance-hook/-/feathers-advance-hook-2.0.5.tgz#dcc0317c939b203124d124cbf5979033ba16111d"
+  integrity sha512-MFSFKc1veGn142pq61TZdBz//xZ2PeBSGnj2k7hWB7dc/f4e7AWnuoBLplko9OEXpG603/cfI6wF+RCnF7pJlQ==
   dependencies:
     "@feathersjs/errors" "^5.0.34"
     "@feathersjs/feathers" "^5.0.34"
     "@google-cloud/storage" "^7.16.0"
     dist "^0.1.2"
     mime-types "^3.0.1"
-    uuid "^11.1.0"
+    uuid "^13.0.0"
 
 "@colors/colors@1.6.0", "@colors/colors@^1.6.0":
   version "1.6.0"
