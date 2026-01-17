@@ -2012,10 +2012,10 @@
   resolved "https://registry.yarnpkg.com/@types/ms/-/ms-2.1.0.tgz#052aa67a48eccc4309d7f0191b7e41434b90bb78"
   integrity sha512-GsCCIZDE/p3i96vtEqx+7dBUGXrc7zeSK3wwPHIaRThS+9OhWIXRqzs4d6k1SVU8g91DrNRWxWUGhp5KXQb2VA==
 
-"@types/node@*", "@types/node@>=10.0.0", "@types/node@^25.0.4":
-  version "25.0.4"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-25.0.4.tgz#0532f0f0e460533c81b1c63c156139ed6a5c05ed"
-  integrity sha512-9L7EOcoPf2mpvBL6GbE4z6zY9oaaP389dZ5ZZ05n2K9p3e1rEUwcXqwhXIKRMbK/uV1U8MYactPf1XH0xmtZWg==
+"@types/node@*", "@types/node@>=10.0.0", "@types/node@^25.0.9":
+  version "25.0.9"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-25.0.9.tgz#81ce3579ddf67cae812a9d49c8a0ab90c82e7782"
+  integrity sha512-/rpCXHlCWeqClNBwUhDcusJxXYDjZTyE8v5oTO7WbL8eij2nKhUeU89/6xgjU7N4/Vh3He0BtyhJdQbDyhiXAw==
   dependencies:
     undici-types "~7.16.0"
 
