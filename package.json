@@ -45,7 +45,7 @@
     "@feathersjs/socketio": "^5.0.37",
     "cls-hooked": "^4.2.2",
     "compression": "^1.8.1",
-    "cors": "^2.8.5",
+    "cors": "^2.8.6",
     "cross-env": "^10.1.0",
     "feathers-authentication-hooks": "^1.0.2",
     "feathers-hooks-common": "^8.2.1",
