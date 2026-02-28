@@ -52,7 +52,7 @@
     "feathers-permissions": "^2.1.4",
     "feathers-sequelize": "^7.0.3",
     "helmet": "^8.1.0",
-    "pg": "^8.18.0",
+    "pg": "^8.19.0",
     "sequelize": "^6.37.7",
     "serve-favicon": "^2.5.1",
     "uuid": "^13.0.0",
