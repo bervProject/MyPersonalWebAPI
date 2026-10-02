@@ -13,7 +13,7 @@ COPY --from=build /app/lib /app/lib
 COPY package.json yarn.lock  ./
 COPY config/ /app/config
 COPY public/ /app/public
-RUN yarn --frozen-lockfile --production && yarn cache clean
+RUN corepack enable && corepack prepare yarn@stable --activate && yarn --frozen-lockfile --production && yarn cache clean
 RUN adduser -D mpwa
 USER mpwa
 CMD [ "yarn", "start:prod" ]
