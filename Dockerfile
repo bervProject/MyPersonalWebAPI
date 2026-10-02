@@ -2,7 +2,7 @@ FROM node:26-alpine as build
 # Create app directory
 WORKDIR /app
 COPY package.json yarn.lock ./
-RUN apk add --no-cache git && corepack enable && corepack prepare yarn@stable --activate && yarn --frozen-lockfile
+RUN apk add --no-cache git && npm install --global yarn && yarn --frozen-lockfile
 COPY . .
 RUN yarn compile
 
@@ -13,7 +13,7 @@ COPY --from=build /app/lib /app/lib
 COPY package.json yarn.lock  ./
 COPY config/ /app/config
 COPY public/ /app/public
-RUN corepack enable && corepack prepare yarn@stable --activate && yarn --frozen-lockfile --production && yarn cache clean
+RUN npm install --global yarn && yarn --frozen-lockfile --production && yarn cache clean
 RUN adduser -D mpwa
 USER mpwa
 CMD [ "yarn", "start:prod" ]
