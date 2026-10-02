@@ -2,7 +2,7 @@ FROM node:26-alpine as build
 # Create app directory
 WORKDIR /app
 COPY package.json yarn.lock ./
-RUN apk add --no-cache git && yarn --frozen-lockfile
+RUN apk add --no-cache git && corepack enable && corepack prepare yarn@stable --activate && yarn --frozen-lockfile
 COPY . .
 RUN yarn compile
 
